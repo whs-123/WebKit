@@ -59,11 +59,11 @@
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		7DA9DFBC8F52DE3E706AB811 /* WebViewKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = WebViewKit.podspec; path = ../WebViewKit.podspec; sourceTree = "<group>"; };
+		7DA9DFBC8F52DE3E706AB811 /* WebViewKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = WebViewKit.podspec; path = ../WebViewKit.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		7DD184172B90880ED388C20A /* Pods-WebViewKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebViewKit_Tests.debug.xcconfig"; path = "Target Support Files/Pods-WebViewKit_Tests/Pods-WebViewKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		976463A131E3CEEF27DF5B58 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		9DE4FD70078634C34F355771 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		976463A131E3CEEF27DF5B58 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		9DE4FD70078634C34F355771 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		A9E99D77E62DF2E6417D5ACF /* Pods-WebViewKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebViewKit_Example.debug.xcconfig"; path = "Target Support Files/Pods-WebViewKit_Example/Pods-WebViewKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		C235081FBDE3D0C1E07F4B91 /* Pods_WebViewKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WebViewKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F84A0F6B23AACD3554FE97DF /* Pods_WebViewKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WebViewKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -193,7 +193,6 @@
 				7DD184172B90880ED388C20A /* Pods-WebViewKit_Tests.debug.xcconfig */,
 				453A45246568AC0B74DC2EB5 /* Pods-WebViewKit_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -258,6 +257,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -302,10 +302,12 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-WebViewKit_Example/Pods-WebViewKit_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/JXBWebKit/JXBWebKit.framework",
 				"${BUILT_PRODUCTS_DIR}/WebViewKit/WebViewKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JXBWebKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WebViewKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,0 +1,23 @@
+PODS:
+  - JXBWebKit (1.3.0)
+  - WebViewKit (0.1.0):
+    - JXBWebKit
+
+DEPENDENCIES:
+  - WebViewKit (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - JXBWebKit
+
+EXTERNAL SOURCES:
+  WebViewKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  JXBWebKit: 7af9f6581e17d706b52a0979d4ed0dbaef52bccc
+  WebViewKit: da5fc38936debf35efa6aaf369d8ed57a99d2e92
+
+PODFILE CHECKSUM: 27a9ede5632739900b45ba1a4d6df632df90d06b
+
+COCOAPODS: 1.8.4

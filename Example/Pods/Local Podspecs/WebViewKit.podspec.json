@@ -1,0 +1,27 @@
+{
+  "name": "WebViewKit",
+  "version": "0.1.0",
+  "summary": "A short description of WebViewKit.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/white/WebViewKit",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "white": "baibin@51yund.com"
+  },
+  "source": {
+    "git": "https://github.com/white/WebViewKit.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "WebViewKit/Classes/**/*",
+  "dependencies": {
+    "JXBWebKit": [
+
+    ]
+  }
+}

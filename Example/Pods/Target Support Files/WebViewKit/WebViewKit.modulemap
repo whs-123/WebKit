@@ -1,0 +1,6 @@
+framework module WebViewKit {
+  umbrella header "WebViewKit-umbrella.h"
+
+  export *
+  module * { export * }
+}
