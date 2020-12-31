@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'WebViewKit_Example' do
+  pod 'WebViewKit', :path => '../'
+
+  target 'WebViewKit_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
